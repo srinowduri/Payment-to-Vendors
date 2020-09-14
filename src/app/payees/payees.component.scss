@@ -1,0 +1,64 @@
+.container{
+    float: left;
+}
+.payee{
+    width: 100px;
+}
+.center-block{
+    border-collapse: collapse;
+    border: 2px solid darkblue;
+    width: 300px;
+    margin-left: 5px;
+    padding: 8px;
+    
+    a{
+        text-decoration: none;
+    }
+}
+h3  {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: black;
+}
+
+.list   {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: darkslateblue;
+    text-decoration: none;
+    // color: inherit;
+}
+
+.list:hover {
+    color: red;
+}
+
+h4{
+    color: black;
+    margin-left: 5px;
+    font-weight: bold;
+}
+span{
+    font-size: larger;
+    color: black;
+    margin-left: 10px;
+}
+.main-head{
+    font-size: 15px;
+    margin-left: 10px;
+    color: rgb(223, 13, 13);
+}
+.sub-head{
+    font-size: 13px;
+    margin-left: 18px;
+    color: blue;
+}
+.btn-primary{
+    margin: 10px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: navy;
+}
+.col-md-4{
+    margin-left: 20px;
+}

@@ -1,0 +1,49 @@
+.remittanceList{
+    h4{
+        font-weight: bolder;
+        color: black;
+    }
+
+    a{
+        font-size: 15px;
+        font-weight: bold;
+        color: darkslateblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    a:hover{
+        color: red;
+    }
+}
+
+.details{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    h4{
+        font-weight: bolder;
+        color: black;
+        margin-left: 10px; 
+    }
+}
+
+.center-block{
+    border-collapse: collapse;
+    border: 2px solid darkblue;
+    width: 400px;
+    margin-left: 10px;
+    padding: 10px;
+    margin-top: 10px;
+
+    b{
+        color: blue;
+    }
+
+    a{
+        font-weight: bolder;
+    }
+}

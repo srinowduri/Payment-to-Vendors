@@ -1,0 +1,43 @@
+<div class="container">
+    <h3>Vendors</h3>
+    <div class="row">
+        <div class="col-md-2">
+            <div *ngFor="let name of payeeNames">
+                <h5>
+                    <a href="#" (click)="onSelectPayee(name)" class="list"> {{ name }} </a> 
+                </h5>   
+            </div>
+        </div>
+        
+            <div class="col-md-5">
+                <div *ngIf="payeeDetails">
+                    <h4>Payee Details:</h4>
+                    <form class="center-block">
+                        <a> <b class="main-head"> Name: </b><span>{{ payeeDetails.Payee.Name }}</span></a><br>
+                        <a> <b class="main-head">Fax: </b><span>{{ payeeDetails.Payee.Fax }}</span></a><br>
+                        <a> <b class="main-head">Phone:</b> <span>{{ payeeDetails.Payee.Phone }}</span></a><br>
+                        <a> <b class="main-head"> Address: </b> <br>
+                            <a> <b class="sub-head">Address1:</b> <span>{{ payeeDetails.Payee.Address.Address1 }} </span></a><br>
+                            <a> <b class="sub-head">Address2:</b><span>---{{ payeeDetails.Payee.Address.Address2 }}</span></a><br>
+                            <a> <b class="sub-head">City:</b> <span>{{ payeeDetails.Payee.Address.City}}</span></a><br>
+                            <a> <b class="sub-head">State or Province: </b><span>{{ payeeDetails.Payee.Address.StateOrProvince }}</span></a><br>
+                            <a> <b class="sub-head">Country:</b> <span>{{ payeeDetails.Payee.Address.Country }}</span></a><br>
+                            <a> <b class="sub-head">Postal Code: </b><span>{{ payeeDetails.Payee.Address.PostalCode }}</span></a><br>
+                        </a>
+                        <a> <b class="main-head">Attention:</b> <span>{{ payeeDetails.Payee.Attention }}</span></a><br>
+                        <a> <b class="main-head">Submission Date:</b> <span>{{ payeeDetails.Payee.SubmissionDate }}</span></a><br>
+                    </form><br>
+                    <button class="btn btn-primary" (click)="onPayments()">Payments</button>
+                    <button class="btn btn-primary" (click)="onRemit()">Remittance</button>
+                 </div>
+            </div>
+        
+        <div class="col-sm-4">
+            <app-payments *ngIf="showInfo === 'pay'" [payeeName] = "payeeDetails.Payee.Name"></app-payments>
+            <app-remittance *ngIf="showInfo === 'remit'" [payeeName] = "payeeDetails.Payee.Name"></app-remittance>
+        </div>
+    </div>
+</div>
+
+
+   

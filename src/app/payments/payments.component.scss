@@ -1,0 +1,32 @@
+.container {
+    float: left;
+}
+.center-block{
+    border-collapse: collapse;
+    border: 2px solid darkblue;
+    width: 200px;
+    // height: 70px;
+    margin-left: 5px;
+    padding: 10px;
+
+    a{
+        color: black;
+        font-weight: bold;
+    }
+
+    b{
+        color: blue;
+    }
+}
+
+a{
+    margin-bottom: 10px;
+    text-decoration: none;
+    margin-left: 10px;
+    color: blue;
+}
+h4{
+    margin-left: 5px;
+    font-weight: bold;
+    color: black;
+}

@@ -1,0 +1,17 @@
+.fm-header {
+    text-align: center;
+    vertical-align: center;
+    height: 70px;
+    background-color: navy;
+    
+    &__title {
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: whitesmoke;
+        font-family: 'Trebuchet MS', 
+                    'Lucida Sans Unicode', 
+                    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 10px;
+    }
+}

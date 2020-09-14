@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-2">
+            <div *ngIf="remittances" class="remittanceList">
+                <h4>Payor Names:</h4>
+                <div *ngFor="let remittance of remittances">
+                    <a (click)="onSelect(remittance.PayorName)">{{ remittance.PayorName }}</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xs-6">
+            <div *ngIf="remittanceDetails" class="details">
+                <h4>Remittance Details:</h4>
+                <form class="center-block">
+                    <a> <b>Payor Name:  </b> {{remittanceDetails.PayorName}}     </a><br>
+                    <a> <b>Payor Id:    </b>   {{remittanceDetails.PayorId}}       </a><br>
+                    <a> <b>Invoice No.: </b>{{remittanceDetails.InvoiceNo}}     </a><br>
+                    <a> <b>Description: </b>{{remittanceDetails.Description}}   </a><br>
+                    <a> <b>Amount: </b>     {{remittanceDetails.Amount}}        </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
